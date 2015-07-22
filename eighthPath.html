@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+	<meta charset="UTF-8">
+	<title>Swing Survey</title>
+
+	<link rel="stylesheet" type="text/css" href="index.css"/>
+	<link href='http://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
+</head>
+<body>
+
+<div class="survey">
+	<div class="title">
+		市场调查 (中国版)
+	</div>
+	<div class="sub-title">* Required</div>
+
+
+	<form id="surveyForm">
+
+		<div class="surveyForm">
+			<div class="formTitle">
+				告诉我们需要改善的地方
+			</div>
+
+			<div class="question">
+				<div class="questionTitle">针对第七页的手表，您觉得本产品有哪些功能还再需要加强的呢？ <span>*</span></div>
+				<div class="answerOption">
+					<div class="option">
+						<input id="suggestion1" type="checkbox" name="improve" value="1" role="checkbox"/>
+						<label for="suggestion1">价格太高了</label>
+					</div>
+
+					<div class="option">
+						<input id="suggestion2" type="checkbox" name="improve" value="2" role="checkbox"/>
+						<label for="suggestion2">我不喜欢设计</label>
+					</div>
+
+					<div class="option">
+						<input id="suggestion3" type="checkbox" name="improve" value="3" role="checkbox"/>
+						<label for="suggestion3">我想要更多的功能</label>
+					</div>
+
+					<div class="option">
+						<input id="suggestion4" type="checkbox" name="improve" value="4" role="checkbox"/>
+						<label for="suggestion4">我喜欢你描述的App，但我不需要手表本身</label>
+					</div>
+
+					<div class="option">
+						<input id="suggestion5" type="checkbox" name="improve" value="5" role="checkbox"/>
+						<label for="suggestion5">我喜欢手表，但我不需要App</label>
+					</div>
+
+				</div>
+			</div>
+
+			<div class="question">
+				<div class="questionTitle">能告诉我们更多改善的点子吗？ <span>*</span></div>
+				<div class="answerOption">
+					<textarea name="idea" cols="50" rows="20"></textarea>
+				</div>
+			</div>
+
+			<div class="question">
+				<div class="questionTitle">如果您对我们的产品有兴趣，欢迎您留下Email，我们未来会提供更多资讯以及优惠给您！ <span>*</span></div>
+				<div class="answerOption">
+					<input name="email" placeholder="Email" type="email"/>
+				</div>
+			</div>
+
+
+			<div class="submitButton submit" to="final.html">Submit</div>
+		</div>
+
+	</form>
+
+
+
+</div>
+
+<script type="text/javascript" src="lib/jquery-1.11.2.min.js"></script>
+<script type="application/javascript" src="http://l2.io/ip.js/?var=userip"></script>
+<script type="text/javascript" src="js/index.js"></script>
+</body>
+</html>

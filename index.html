@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+	<meta charset="UTF-8">
+	<title>Swing Survey</title>
+
+	<link rel="stylesheet" type="text/css" href="index.css"/>
+	<link href='http://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
+</head>
+<body>
+
+<form id="surveyForm">
+
+	<div class="survey">
+		<div class="title">
+			市场调查 (中国版)
+		</div>
+		<div class="sub-title">* Required</div>
+
+		<div class="surveyForm">
+			<div class="question">
+				<div class="questionTitle">您的性别？<span>*</span></div></div>
+
+
+			<div class="answerOption">
+				<div class="option">
+					<input id="radioFemale" type="radio" name="gender" value="1" role="radio"/>
+					<label for="radioFemale">女性</label>
+				</div>
+				<div class="option">
+
+					<input id="radioMale" type="radio" name="gender" value="2" role="radio"/>
+					<label for="radioMale">男性</label>
+				</div>
+				<div class="option">
+
+					<input id="radioOther" type="radio" name="gender" value="3" role="radio"/>
+					<label for="radioOther">其他/不回答</label>
+				</div>
+
+			</div>
+
+
+			<div class="question">
+				<div class="questionTitle">您的年龄？<span>*</span></div>
+
+
+				<div class="answerOption">
+					<div class="option">
+
+						<input id="radio19" type="radio" name="age" value="1" role="radio"/>
+						<label for="radio19">16-19</label>
+					</div>
+					<div class="option">
+
+						<input id="radio24" type="radio" name="age" value="2" role="radio"/>
+						<label for="radio24">20-24</label>
+					</div>
+					<div class="option">
+
+						<input id="radio29" type="radio" name="age" value="3" role="radio"/>
+						<label for="radio29">25-29</label>
+					</div>
+					<div class="option">
+
+						<input id="radio34" type="radio" name="age" value="4" role="radio"/>
+						<label for="radio34">30-34</label>
+					</div>
+					<div class="option">
+
+						<input id="radio39" type="radio" name="age" value="5" role="radio"/>
+						<label for="radio39">35-39</label>
+					</div>
+					<div class="option">
+
+						<input id="radio44" type="radio" name="age" value="6" role="radio"/>
+						<label for="radio44">40-44</label>
+					</div>
+					<div class="option">
+
+						<input id="radio49" type="radio" name="age" value="7" role="radio"/>
+						<label for="radio49">45-49</label>
+					</div>
+					<div class="option">
+
+						<input id="radio54" type="radio" name="age" value="8" role="radio"/>
+						<label for="radio54">50-54</label>
+					</div>
+					<div class="option">
+
+						<input id="radio55" type="radio" name="age" value="9" role="radio"/>
+						<label for="radio55">55+</label>
+					</div>
+
+				</div>
+			</div>
+
+
+			<div class="question">
+				<div class="questionTitle">您家庭的年收入？<span>*</span></div>
+
+
+				<div class="subQuestionTitle">in RMB</div>
+				<div class="answerOption">
+					<div class="option">
+						<input id="radioIncome1" type="radio" name="income" value="1" role="radio"/>
+						<label for="radioIncome1">¥0 to ¥120,000</label>
+					</div>
+					<div class="option">
+
+						<input id="radioIncome2" type="radio" name="income" value="2" role="radio"/>
+						<label for="radioIncome2">¥120,000 to ¥210,000</label>
+					</div>
+					<div class="option">
+
+						<input id="radioIncome3" type="radio" name="income" value="3" role="radio"/>
+						<label for="radioIncome3">¥210,000 to ¥300,000</label>
+					</div>
+					<div class="option">
+
+						<input id="radioIncome4" type="radio" name="income" value="4" role="radio"/>
+						<label for="radioIncome4">¥210,¥300,000 to ¥390,000</label>
+					</div>
+					<div class="option">
+
+						<input id="radioIncome5" type="radio" name="income" value="5" role="radio"/>
+						<label for="radioIncome5">¥390,000 to ¥480,000</label>
+					</div>
+					<div class="option">
+
+						<input id="radioIncome6" type="radio" name="income" value="6" role="radio"/>
+						<label for="radioIncome6">¥480,000 to ¥600,000</label>
+					</div>
+					<div class="option">
+
+						<input id="radioIncome7" type="radio" name="income" value="7" role="radio"/>
+						<label for="radioIncome7">¥600,000 to ¥1,200,000</label>
+					</div>
+					<div class="option">
+
+						<input id="radioIncome8" type="radio" name="income" value="8" role="radio"/>
+						<label for="radioIncome8">¥1,200,000+</label>
+					</div>
+
+				</div>
+			</div>
+
+			<div class="question">
+				<div class="questionTitle">您的职业？<span>*</span></div>
+
+
+				<div class="subQuestionTitle">如果答案不在选项中，请选择「其他」</div>
+				<div class="answerOption">
+
+					<select name="job">
+						<option value=""></option>
+						<option value="1">会计</option>
+						<option value="2">行政</option>
+						<option value="3">汽车</option>
+						<option value="4">银行</option>
+						<option value="5">生物科技</option>
+						<option value="6">新闻传播</option>
+						<option value="7">商业开发</option>
+						<option value="8">建筑</option>
+						<option value="9">咨询</option>
+						<option value="10">客户服务</option>
+						<option value="11">设计</option>
+						<option value="12">经销商</option>
+						<option value="13">新创</option>
+						<option value="14">教育</option>
+						<option value="15">工程</option>
+						<option value="16">高阶主管</option>
+						<option value="17">基础建设</option>
+						<option value="18">金融</option>
+						<option value="19">政府部门</option>
+						<option value="20">食品杂货</option>
+						<option value="21">卫生保健</option>
+						<option value="22">旅馆</option>
+						<option value="23">人力资源</option>
+						<option value="24">信息科技 (IT)</option>
+						<option value="25">保险</option>
+						<option value="26">仓储</option>
+						<option value="27">法律</option>
+						<option value="28">管理</option>
+						<option value="29">制造</option>
+						<option value="30">营销</option>
+						<option value="31">媒体</option>
+						<option value="32">非营利</option>
+						<option value="33">护士</option>
+						<option value="34">制药业</option>
+						<option value="35">专业服务</option>
+						<option value="36">采购</option>
+						<option value="37">不动产</option>
+						<option value="38">研究</option>
+						<option value="39">餐饮</option>
+						<option value="40">零售业</option>
+						<option value="41">销售</option>
+						<option value="42">科学</option>
+						<option value="43">供应链</option>
+						<option value="44">学生</option>
+						<option value="45">通讯</option>
+						<option value="46">培训</option>
+						<option value="47">运输</option>
+						<option value="48">其他</option>
+					</select>
+
+				</div>
+			</div>
+
+
+			<div class="question">
+				<div class="questionTitle">您的邮政编码？<span>*</span></div>
+
+
+				<div class="subQuestionTitle">六码</div>
+				<div class="answerOption">
+					<input type="number" maxlength="6" name="zipcode"/>
+				</div>
+			</div>
+			<div class="submitButton" to="secondPage.html">Continue >></div>
+
+		</div>
+
+
+	</div>
+
+</form>
+
+
+
+<script type="text/javascript" src="lib/jquery-1.11.2.min.js"></script>
+<script type="application/javascript" src="http://l2.io/ip.js/?var=userip"></script>
+<script type="text/javascript" src="js/index.js"></script>
+
+</body>
+</html>

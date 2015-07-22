@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+	<meta charset="UTF-8">
+	<title>Swing Survey</title>
+
+	<link rel="stylesheet" type="text/css" href="index.css"/>
+	<link href='http://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
+</head>
+<body>
+
+<div class="survey">
+	<div class="title">
+		市场调查 (中国版)
+	</div>
+	<div class="sub-title">* Required</div>
+
+
+
+	<form id="surveyForm">
+
+		<div class="surveyForm">
+			<div class="formTitle">
+				想象一下，一支可以跟您的手机配对的儿童手表
+			</div>
+			<div class="question">
+				<div class="questionTitle">您会购买以下的商品吗？一支智能儿童表，可以侦测小孩的健康状况、环境温度日照、定位小孩，并实时传送数据到你的手机。同时您可以用手机App搜寻附近适合您孩子的课外活动，并且同步您、小孩、及保母的行事历？ <span>*</span></div>
+				<div class="subQuestionTitle">零售价: ¥410</div>
+				<div class="answerOption">
+					<div class="option">
+						<input id="willingPurchase1" type="radio" name="buyOrNot" value="1" role="radio"/>
+						<label for="willingPurchase1">是，我会想买</label>
+					</div>
+
+					<div class="option">
+						<input id="willingPurchase2" type="radio" name="buyOrNot" value="2" role="radio"/>
+						<label for="willingPurchase2">不，我不想买</label>
+					</div>
+
+				</div>
+			</div>
+
+			<img class="ss-image" title="" src="https://lh6.googleusercontent.com/BDQ7HFzztE5gQYbfWP3MBEEt8ihMkwWiehzmWgEBGL-O-b9nNi84vu_iN3om0LF1XGYdWg" style="" alt="Captionless Image">
+
+			<div class="question">
+				<div class="questionTitle">您会希望手机的App有什么功能？ <span>*</span></div>
+				<div class="answerOption">
+					<div class="option">
+						<input id="wishFunction1" type="checkbox" name="wantToHaveFunction" value="1" role="checkbox"/>
+						<label for="wishFunction1">显示小孩的位置</label>
+					</div>
+
+					<div class="option">
+						<input id="wishFunction2" type="checkbox" name="wantToHaveFunction" value="2" role="checkbox"/>
+						<label for="wishFunction2">每日活动量监测</label>
+					</div>
+
+					<div class="option">
+						<input id="wishFunction3" type="checkbox" name="wantToHaveFunction" value="3" role="checkbox"/>
+						<label for="wishFunction3">让小孩跟父母一起设定学习目标</label>
+					</div>
+
+					<div class="option">
+						<input id="wishFunction4" type="checkbox" name="wantToHaveFunction" value="4" role="checkbox"/>
+						<label for="wishFunction4">监测环境温度、湿度、日照量</label>
+					</div>
+
+					<div class="option">
+						<input id="wishFunction5" type="checkbox" name="wantToHaveFunction" value="5" role="checkbox"/>
+						<label for="wishFunction5">纪录小孩成长速度，并跟全国标准比较</label>
+					</div>
+
+					<div class="option">
+						<input id="wishFunction6" type="checkbox" name="wantToHaveFunction" value="6" role="checkbox"/>
+						<label for="wishFunction6">建议您适合您孩子的课外活动</label>
+					</div>
+
+					<div class="option">
+						<input id="wishFunction7" type="checkbox" name="wantToHaveFunction" value="7" role="checkbox"/>
+						<label for="wishFunction7">提醒您和您的小孩接下来的行程</label>
+					</div>
+				</div>
+			</div>
+
+
+			<div class="question">
+				<div class="questionTitle">如果您要买一支儿童表，您会去哪里买？ <span>*</span></div>
+				<div class="answerOption">
+					<div class="option">
+						<input id="whereToBuy1" type="checkbox" name="whereToBuySmartWatch" value="1" role="checkbox"/>
+						<label for="whereToBuy1">综合在线零售商</label>
+					</div>
+
+					<div class="option">
+						<input id="whereToBuy2" type="checkbox" name="whereToBuySmartWatch" value="2" role="checkbox"/>
+						<label for="whereToBuy2">电器行</label>
+					</div>
+
+					<div class="option">
+						<input id="whereToBuy3" type="checkbox" name="whereToBuySmartWatch" value="3" role="checkbox"/>
+						<label for="whereToBuy3">大卖场</label>
+					</div>
+
+					<div class="option">
+						<input id="whereToBuy4" type="checkbox" name="whereToBuySmartWatch" value="4" role="checkbox"/>
+						<label for="whereToBuy4">折扣商店</label>
+					</div>
+
+					<div class="option">
+						<input id="whereToBuy5" type="checkbox" name="whereToBuySmartWatch" value="5" role="checkbox"/>
+						<label for="whereToBuy5">百货公司</label>
+					</div>
+
+					<div class="option">
+						<input id="whereToBuy6" type="checkbox" name="whereToBuySmartWatch" value="6" role="checkbox"/>
+						<label for="whereToBuy6">玩具卖场</label>
+					</div>
+
+					<div class="option">
+						<input id="whereToBuy7" type="checkbox" name="whereToBuySmartWatch" value="7" role="checkbox"/>
+						<label for="whereToBuy7">手表公司网站</label>
+					</div>
+
+					<div class="option">
+						<input id="whereToBuy8" type="checkbox" name="whereToBuySmartWatch" value="8" role="checkbox"/>
+						<label for="whereToBuy8">钟表行</label>
+					</div>
+
+					<div class="option">
+						Other: <input type="text" name="whereToBuySmartWatchOther"/>
+					</div>
+				</div>
+			</div>
+
+			<div class="submitButton" to="eighthPath.html">Continue >></div>
+
+		</div>
+
+	</form>
+
+
+
+	<script type="text/javascript" src="lib/jquery-1.11.2.min.js"></script>
+	<script type="application/javascript" src="http://l2.io/ip.js/?var=userip"></script>
+	<script type="text/javascript" src="js/index.js"></script>
+</body>
+</html>
