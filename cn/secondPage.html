@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+	<meta charset="UTF-8">
+	<title>Swing Survey</title>
+
+	<link rel="stylesheet" type="text/css" href="index.css"/>
+	<link href='http://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
+</head>
+<body>
+
+<div class="survey">
+	<div class="title">
+		市场调查 (中国版)
+	</div>
+	<div class="sub-title">* Required</div>
+
+	<form id="surveyForm">
+		<div class="surveyForm">
+			<div class="formTitle">
+				请教关于您的孩子
+			</div>
+			<div class="question">
+				<div class="questionTitle">您有几个小孩？ <span>*</span></div>
+				<div class="answerOption">
+					<input type="number" name="kids"/>
+
+				</div>
+			</div>
+
+			<div class="question">
+				<div class="questionTitle">请问它们几岁？ <span>*</span></div>
+				<div class="subQuestionTitle">如果您有超过一个小孩，请用 , 分隔它们的岁数，例如 "4,5,12"</div>
+				<div class="answerOption">
+					<input type="text" name="kidsAge"/>
+
+				</div>
+			</div>
+
+			<div class="question">
+				<div class="questionTitle">您一周花多少个小时跟小孩相处？ <span>*</span></div>
+				<div class="answerOption">
+					<input type="number" name="weeklySpend"/>
+
+				</div>
+			</div>
+
+			<div class="question">
+				<div class="questionTitle">您如何排定您小孩的行程？ <span>*</span></div>
+				<div class="answerOption">
+					<div class="option">
+						<input id="schedule1" type="radio" name="kidsSchedule" value="1" role="radio"/>
+						<label for="schedule1">我帮小孩排行程</label>
+					</div>
+
+					<div class="option">
+						<input id="schedule2" type="radio" name="kidsSchedule" value="2" role="radio"/>
+						<label for="schedule2">学校管理我小孩的行程</label>
+					</div>
+
+					<div class="option">
+						<input id="schedule3" type="radio" name="kidsSchedule" value="3" role="radio"/>
+						<label for="schedule3">我的小孩跟我一起讨论他的行程</label>
+					</div>
+
+					<div class="option">
+						<input id="schedule4" type="radio" name="kidsSchedule" value="4" role="radio"/>
+						<label for="schedule4">我的小孩自主管理他的行程</label>
+					</div>
+
+					<div class="option">
+						<input id="schedule5" type="radio" name="kidsSchedule" value="5" role="radio"/>
+						<label for="schedule5">我的小孩没有设定行程</label>
+					</div>
+
+				</div>
+			</div>
+
+			<div class="question">
+				<div class="questionTitle">您的小孩有参加课外活动吗？ <span>*</span></div>
+				<div class="answerOption">
+					<div class="option">
+						<input id="class1" type="radio" name="outdoorActivity" value="1" role="radio"/>
+						<label for="class1">有</label>
+					</div>
+
+					<div class="option">
+						<input id="class2" type="radio" name="outdoorActivity" value="2" role="radio"/>
+						<label for="class2">没有，但以后我想让他参加</label>
+					</div>
+
+					<div class="option">
+						<input id="class3" type="radio" name="outdoorActivity" value="3" role="radio"/>
+						<label for="class3">没有，而且以后我也不打算让他参加</label>
+					</div>
+
+				</div>
+			</div>
+
+			<div class="submitButton" to="thirdPage.html">Continue >></div>
+
+		</div>
+
+
+	</form>
+
+
+
+</div>
+
+<script type="text/javascript" src="../lib/jquery-1.11.2.min.js"></script>
+<script type="application/javascript" src="http://l2.io/ip.js/?var=userip"></script>
+<script type="text/javascript" src="../js/index.js"></script>
+
+</body>
+</html>

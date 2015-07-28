@@ -3,9 +3,8 @@
  */
 var Index = function() {
 		var self = this;
-        this.language  = "Chinese";
-		//this.host = "http://111.185.13.44:60/childrenLab/survey/";
-		this.host = "http://www.childrenlab.com/survey/";
+		this.host = "http://111.185.13.44:60/childrenLab/survey/";
+		//this.host = "http://www.childrenlab.com/survey/";
 		$(document).ready(function(){
 			self.init();
 		});
@@ -36,9 +35,12 @@ Index.prototype.attachEvent = function(){
 	var self = this;
 	this.$submitButton.on('click', function(){
 
-		self.storeAnswer();
+
         if(self.$submitButton.hasClass('lastPage')){
+            self.storeAnswer(true);
             eraseCookie("token");
+        }else{
+            self.storeAnswer();
         }
 	});
 
@@ -64,11 +66,25 @@ Index.prototype.moveToPage = function(){
 	window.location = this.nextPage;
 };
 
-Index.prototype.storeAnswer = function(){
+Index.prototype.storeAnswer = function(lastPage){
 	var self = this;
 
+    var regionParam = '';
+    if(typeof region != "undefined"){
+        regionParam = "&region=" + region;
+    }
+
+    var resourcePageParam = '';
+    if(typeof this.resourcePage != "undefined"){
+        resourcePageParam = "&resourcePage=" + this.resourcePage;
+    }
+
+    var lastPageParam = '';
+    if(lastPage){
+        lastPageParam = '&completed=true'
+    }
 	$.ajax({
-		url: this.host + 'storeAnswer?' + $('#surveyForm').serialize() + '&token=' + readCookie("token") + '&ip=' + userip + "&resourcePage=" + this.resourcePage,
+		url: this.host + 'storeAnswer?' + $('#surveyForm').serialize() + '&token=' + readCookie("token") + '&ip=' + userip + resourcePageParam + regionParam + lastPageParam,
 		success: function(){
 			self.moveToPage();
 		}
