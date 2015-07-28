@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+	<meta charset="UTF-8">
+	<title>Swing Survey</title>
+
+	<link rel="stylesheet" type="text/css" href="index.css"/>
+	<link href='http://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
+</head>
+<body>
+
+<div class="survey">
+	<div class="title">
+        Market Survey
+	</div>
+	<div class="sub-title">* Required</div>
+
+	<form id="surveyForm">
+		<div class="surveyForm">
+			<div class="formTitle">
+                Please tell us something about your children
+            </div>
+			<div class="question">
+				<div class="questionTitle">How many children do you have？ <span>*</span></div>
+				<div class="answerOption">
+					<input type="number" name="kids"/>
+
+				</div>
+			</div>
+
+			<div class="question">
+				<div class="questionTitle">How old are they？ <span>*</span></div>
+				<div class="subQuestionTitle">Please use comma to separate ages, such as "4,5,12"</div>
+				<div class="answerOption">
+					<input type="text" name="kidsAge"/>
+
+				</div>
+			</div>
+
+			<div class="question">
+				<div class="questionTitle">How many hours per week do you spend with your children？ <span>*</span></div>
+				<div class="answerOption">
+					<input type="number" name="weeklySpend"/>
+
+				</div>
+			</div>
+
+			<div class="question">
+				<div class="questionTitle">How do you arrange your Children's schedule？ <span>*</span></div>
+				<div class="answerOption">
+					<div class="option">
+                        <input id="schedule1" type="radio" name="kidsSchedule" value="1" role="radio"/>
+						<label for="schedule1">I make schedule for my children</label>
+					</div>
+
+					<div class="option">
+						<input id="schedule2" type="radio" name="kidsSchedule" value="2" role="radio"/>
+						<label for="schedule2">School manages my children's schedule</label>
+					</div>
+
+					<div class="option">
+						<input id="schedule3" type="radio" name="kidsSchedule" value="3" role="radio"/>
+						<label for="schedule3">My children and I discuss and make schedule together</label>
+					</div>
+
+					<div class="option">
+						<input id="schedule4" type="radio" name="kidsSchedule" value="4" role="radio"/>
+						<label for="schedule4">My children manage their own schedule</label>
+					</div>
+
+					<div class="option">
+						<input id="schedule5" type="radio" name="kidsSchedule" value="5" role="radio"/>
+						<label for="schedule5">My children do not have a set schedule</label>
+					</div>
+
+				</div>
+			</div>
+
+			<div class="question">
+				<div class="questionTitle">Do your children attend extracurricular activity？ <span>*</span></div>
+				<div class="answerOption">
+					<div class="option">
+						<input id="class1" type="radio" name="outdoorActivity" value="1" role="radio"/>
+						<label for="class1">Yes</label>
+					</div>
+
+					<div class="option">
+						<input id="class2" type="radio" name="outdoorActivity" value="2" role="radio"/>
+						<label for="class2">No, but I would like my children attend extracurricular activity in future</label>
+					</div>
+
+					<div class="option">
+						<input id="class3" type="radio" name="outdoorActivity" value="3" role="radio"/>
+						<label for="class3">No, and I don't let my children attend extracurricular activity</label>
+					</div>
+
+				</div>
+			</div>
+
+			<div class="submitButton" to="thirdPage.html">Continue >></div>
+
+		</div>
+
+
+	</form>
+
+
+
+</div>
+
+<script type="text/javascript" src="../lib/jquery-1.11.2.min.js"></script>
+<script type="application/javascript" src="http://l2.io/ip.js/?var=userip"></script>
+<script type="text/javascript" src="../js/index.js"></script>
+
+</body>
+</html>

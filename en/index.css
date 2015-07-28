@@ -1,0 +1,82 @@
+body {
+    background: url('../img/nasty_fabric.png') repeat;
+    text-align: center;
+}
+
+input[type="text"], input[type="number"], input[type="email"] {
+    padding: 5px;
+    width: 200px;
+    border: 1px solid #5B5B5B;
+    font-size: 18px;
+}
+
+div.survey {
+    display: inline-block;
+    padding: 20px 80px;
+    background-color: white;
+    opacity: 0.6;
+    text-align: left;
+    line-height: 26px;
+    font-size: 18px;
+    border-radius: 10px;
+}
+
+div.title {
+    font-size: 22px;
+    color: #CF0000;
+}
+
+label.title {
+
+}
+
+div.sub-title {
+    font-size: 14px;
+    color: #4F4F4F;
+}
+
+div.surveyForm {
+    margin: 10px;
+}
+
+div.question {
+    margin: 15px 0;
+}
+
+div.questionTitle {
+    font-size: 21px;
+    font-weight: bold;
+}
+
+div.questionTitle span {
+    font-size: 14px;
+    color: #CF0000;
+}
+
+div.question div.subQuestionTitle {
+    font-size: 15px;
+    color: #4F4F4F;
+}
+
+div.survey textarea {
+    font-size: 15px;
+}
+
+div.submitButton {
+    display: inline-block;
+    background-color: black;
+    color: white;
+    padding: 5px;
+    border-radius: 7px;
+    cursor: pointer;
+}
+
+div.formTitle{
+    font-size: 20px;
+    text-align: center;
+    background-color: #717171;
+    color: white;
+}
+div.submit {
+    background-color: #4D90FE;
+}

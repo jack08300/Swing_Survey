@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Swing Survey</title>
+
+    <link rel="stylesheet" type="text/css" href="index.css"/>
+    <link href='http://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
+</head>
+<body>
+
+<form id="surveyForm">
+
+    <div class="survey">
+        <div class="title">
+            Market Survey
+        </div>
+        <div class="sub-title">* Required</div>
+
+        <div class="surveyForm">
+            <div class="question">
+                <div class="questionTitle">What is your gender？<span>*</span></div></div>
+
+
+            <div class="answerOption">
+                <div class="option">
+                    <input id="radioFemale" type="radio" name="gender" value="1" role="radio"/>
+                    <label for="radioFemale">Female</label>
+                </div>
+                <div class="option">
+
+                    <input id="radioMale" type="radio" name="gender" value="2" role="radio"/>
+                    <label for="radioMale">Male</label>
+                </div>
+                <div class="option">
+
+                    <input id="radioOther" type="radio" name="gender" value="3" role="radio"/>
+                    <label for="radioOther">Others/Not to Answer</label>
+                </div>
+
+            </div>
+
+
+            <div class="question">
+                <div class="questionTitle">What is your age？<span>*</span></div>
+
+
+                <div class="answerOption">
+                    <div class="option">
+
+                        <input id="radio19" type="radio" name="age" value="1" role="radio"/>
+                        <label for="radio19">16-19</label>
+                    </div>
+                    <div class="option">
+
+                        <input id="radio24" type="radio" name="age" value="2" role="radio"/>
+                        <label for="radio24">20-24</label>
+                    </div>
+                    <div class="option">
+
+                        <input id="radio29" type="radio" name="age" value="3" role="radio"/>
+                        <label for="radio29">25-29</label>
+                    </div>
+                    <div class="option">
+
+                        <input id="radio34" type="radio" name="age" value="4" role="radio"/>
+                        <label for="radio34">30-34</label>
+                    </div>
+                    <div class="option">
+
+                        <input id="radio39" type="radio" name="age" value="5" role="radio"/>
+                        <label for="radio39">35-39</label>
+                    </div>
+                    <div class="option">
+
+                        <input id="radio44" type="radio" name="age" value="6" role="radio"/>
+                        <label for="radio44">40-44</label>
+                    </div>
+                    <div class="option">
+
+                        <input id="radio49" type="radio" name="age" value="7" role="radio"/>
+                        <label for="radio49">45-49</label>
+                    </div>
+                    <div class="option">
+
+                        <input id="radio54" type="radio" name="age" value="8" role="radio"/>
+                        <label for="radio54">50-54</label>
+                    </div>
+                    <div class="option">
+
+                        <input id="radio55" type="radio" name="age" value="9" role="radio"/>
+                        <label for="radio55">55+</label>
+                    </div>
+
+                </div>
+            </div>
+
+
+            <div class="question">
+                <div class="questionTitle">What is your family's income level？<span>*</span></div>
+
+                <div class="subQuestionTitle">in USD</div>
+                <div class="answerOption">
+                    <div class="option">
+                        <input id="radioIncome1" type="radio" name="income" value="1" role="radio"/>
+                        <label for="radioIncome1"> $0 to $20K</label>
+                    </div>
+                    <div class="option">
+
+                        <input id="radioIncome2" type="radio" name="income" value="2" role="radio"/>
+                        <label for="radioIncome2">$20K to $35K</label>
+                    </div>
+                    <div class="option">
+
+                        <input id="radioIncome3" type="radio" name="income" value="3" role="radio"/>
+                        <label for="radioIncome3">$35K to $50K</label>
+                    </div>
+                    <div class="option">
+
+                        <input id="radioIncome4" type="radio" name="income" value="4" role="radio"/>
+                        <label for="radioIncome4">$50K to $65K</label>
+                    </div>
+                    <div class="option">
+
+                        <input id="radioIncome5" type="radio" name="income" value="5" role="radio"/>
+                        <label for="radioIncome5">$65K to $80K</label>
+                    </div>
+                    <div class="option">
+
+                        <input id="radioIncome6" type="radio" name="income" value="6" role="radio"/>
+                        <label for="radioIncome6">$80K to $100K</label>
+                    </div>
+                    <div class="option">
+
+                        <input id="radioIncome7" type="radio" name="income" value="7" role="radio"/>
+                        <label for="radioIncome7">$100K to $200K</label>
+                    </div>
+                    <div class="option">
+
+                        <input id="radioIncome8" type="radio" name="income" value="8" role="radio"/>
+                        <label for="radioIncome8">$200K +</label>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="question">
+                <div class="questionTitle">Please describe your job？<span>*</span></div>
+                <div class="answerOption">
+                    <select name="job">
+                        <option value=""></option>
+                        <option value="1">Accounting</option>
+                        <option value="2">Admin & Clerical</option>
+                        <option value="3">Automotive</option>
+                        <option value="4">Banking</option>
+                        <option value="5">Biotech</option>
+                        <option value="6">Broadcast Journalism</option>
+                        <option value="7">Business Development</option>
+                        <option value="8">Construction</option>
+                        <option value="9">Consultant</option>
+                        <option value="10">Customer Service</option>
+                        <option value="11">Design</option>
+                        <option value="12">Distribution</option>
+                        <option value="13">Entrepreneur</option>
+                        <option value="14">Education</option>
+                        <option value="15">Engineering</option>
+                        <option value="16">Executive</option>
+                        <option value="17">Facilities</option>
+                        <option value="18">Finance</option>
+                        <option value="19">Government</option>
+                        <option value="20">Grocery</option>
+                        <option value="21">Health Care</option>
+                        <option value="22">Hotel Hospitality</option>
+                        <option value="23">Human Resources</option>
+                        <option value="24">Information Technology</option>
+                        <option value="25">Insurance</option>
+                        <option value="26">Inventory</option>
+                        <option value="27">Legal</option>
+                        <option value="28">Management</option>
+                        <option value="29">Manufacturing</option>
+                        <option value="30">Marketing</option>
+                        <option value="31">Media</option>
+                        <option value="32">Nonprofit</option>
+                        <option value="33">Nurse</option>
+                        <option value="34">Pharmaceutical</option>
+                        <option value="35">Professional Services</option>
+                        <option value="36">Purchasing  Procurement</option>
+                        <option value="37">Real Estate</option>
+                        <option value="38">Research</option>
+                        <option value="39">Restaurant</option>
+                        <option value="40">Retail</option>
+                        <option value="41">Sales</option>
+                        <option value="42">Science</option>
+                        <option value="43">Supply Chain</option>
+                        <option value="44">Student </option>
+                        <option value="45">Telecommunications </option>
+                        <option value="46">Training</option>
+                        <option value="47">Transportation</option>
+                        <option value="48">Others</option>
+                    </select>
+
+                </div>
+            </div>
+
+            <div class="question">
+                <div class="questionTitle">What is your Zip code？<span>*</span></div>
+                <div class="answerOption">
+                    <input type="number" maxlength="3" name="zipcode"/>
+                </div>
+            </div>
+            <div class="submitButton" to="secondPage.html">Continue >></div>
+
+        </div>
+
+
+    </div>
+
+</form>
+
+
+
+<script type="text/javascript" src="../lib/jquery-1.11.2.min.js"></script>
+<script type="application/javascript" src="http://l2.io/ip.js/?var=userip"></script>
+<script type="text/javascript" src="../js/index.js"></script>
+<script>
+    var region = "USA"
+</script>
+</body>
+</html>

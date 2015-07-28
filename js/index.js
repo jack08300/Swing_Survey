@@ -3,8 +3,8 @@
  */
 var Index = function() {
 		var self = this;
-		this.host = "http://111.185.13.44:60/childrenLab/survey/";
-		//this.host = "http://www.childrenlab.com/survey/";
+		//this.host = "http://111.185.13.44:60/childrenLab/survey/";
+		this.host = "http://www.childrenlab.com/survey/";
 		$(document).ready(function(){
 			self.init();
 		});
@@ -13,7 +13,6 @@ var Index = function() {
 ;
 
 Index.prototype.init = function(){
-    this.resourcePage = getParams("resourcePage");
 	this.$submitButton = $('div.submitButton');
 
 	this.nextPage = this.$submitButton.attr('to');
@@ -74,9 +73,9 @@ Index.prototype.storeAnswer = function(lastPage){
         regionParam = "&region=" + region;
     }
 
-    var resourcePageParam = '';
-    if(typeof this.resourcePage != "undefined"){
-        resourcePageParam = "&resourcePage=" + this.resourcePage;
+    var sourceParam = getParams("source");
+    if(sourceParam){
+        sourceParam = "&source=" + sourceParam;
     }
 
     var lastPageParam = '';
@@ -94,7 +93,7 @@ Index.prototype.storeAnswer = function(lastPage){
         other.val(Base64.encode(other.val()));
     }
 	$.ajax({
-		url: this.host + 'storeAnswer?' + $('#surveyForm').serialize() + '&token=' + readCookie("token") + '&ip=' + userip + resourcePageParam + regionParam + lastPageParam,
+		url: this.host + 'storeAnswer?' + $('#surveyForm').serialize() + '&token=' + readCookie("token") + '&ip=' + userip + sourceParam + regionParam + lastPageParam,
 		success: function(){
 			self.moveToPage();
 		}

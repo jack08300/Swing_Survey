@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+	<meta charset="UTF-8">
+	<title>Swing Survey</title>
+
+	<link rel="stylesheet" type="text/css" href="index.css"/>
+	<link href='http://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
+</head>
+<body>
+
+<div class="survey">
+	<div class="title">
+        Market Survey
+	</div>
+	<div class="sub-title">* Required</div>
+
+
+
+	<form id="surveyForm">
+
+		<div class="surveyForm">
+			<div class="formTitle">
+                A children watch that can connect to your smart phone
+			</div>
+			<div class="question">
+				<div class="questionTitle">If we launch a children watch as below. You can monitor your child's health, location, and surrounding temperature on your phone through a mobile App. Using the mobile App, you can also help your child sign up for extracurricular activities in your city, and sync activities between the watch and your phone. Would you like to buy this watch？ <span>*</span></div>
+				<div class="subQuestionTitle">Retail price: $69</div>
+				<div class="answerOption">
+					<div class="option">
+						<input id="willingPurchase1" type="radio" name="buyOrNot" value="1" role="radio"/>
+						<label for="willingPurchase1">Yes, I would like to buy one</label>
+					</div>
+
+					<div class="option">
+						<input id="willingPurchase2" type="radio" name="buyOrNot" value="2" role="radio"/>
+						<label for="willingPurchase2">No, I don't</label>
+					</div>
+
+				</div>
+			</div>
+
+			<img class="ss-image" title="" src="https://lh6.googleusercontent.com/BDQ7HFzztE5gQYbfWP3MBEEt8ihMkwWiehzmWgEBGL-O-b9nNi84vu_iN3om0LF1XGYdWg" style="" alt="Captionless Image">
+
+			<div class="question">
+				<div class="questionTitle">What features should this watch's App have？ <span>*</span></div>
+				<div class="answerOption">
+					<div class="option">
+                        <input id="wishFunction1" type="checkbox" name="wantToHaveFunction" value="1" role="checkbox"/>
+						<label for="wishFunction1">Show your children's location</label>
+					</div>
+
+					<div class="option">
+						<input id="wishFunction2" type="checkbox" name="wantToHaveFunction" value="2" role="checkbox"/>
+						<label for="wishFunction2">Daily activities planning and tracking</label>
+					</div>
+
+					<div class="option">
+						<input id="wishFunction3" type="checkbox" name="wantToHaveFunction" value="3" role="checkbox"/>
+						<label for="wishFunction3">Allow children to set learning goal with parents</label>
+					</div>
+
+					<div class="option">
+						<input id="wishFunction4" type="checkbox" name="wantToHaveFunction" value="4" role="checkbox"/>
+						<label for="wishFunction4">Show environment's temperature, UV and humidity</label>
+					</div>
+
+					<div class="option">
+						<input id="wishFunction5" type="checkbox" name="wantToHaveFunction" value="5" role="checkbox"/>
+						<label for="wishFunction5">Track children's development milestones against (national) average</label>
+					</div>
+
+					<div class="option">
+						<input id="wishFunction6" type="checkbox" name="wantToHaveFunction" value="6" role="checkbox"/>
+						<label for="wishFunction6">Suggested exercises and development activities for your children</label>
+					</div>
+
+					<div class="option">
+						<input id="wishFunction7" type="checkbox" name="wantToHaveFunction" value="7" role="checkbox"/>
+						<label for="wishFunction7">Remind you and your children the upcoming events</label>
+					</div>
+				</div>
+			</div>
+			<div class="question">
+				<div class="questionTitle">If you are going to buy a children watch, which distributor will you choose？ <span>*</span></div>
+				<div class="answerOption">
+					<div class="option">
+
+
+
+
+
+
+
+
+                        <input id="whereToBuy1" type="checkbox" name="whereToBuySmartWatch" value="1" role="checkbox"/>
+						<label for="whereToBuy1">Online Retailer (e.g. Amazon.com)</label>
+					</div>
+
+					<div class="option">
+						<input id="whereToBuy2" type="checkbox" name="whereToBuySmartWatch" value="2" role="checkbox"/>
+						<label for="whereToBuy2">Electronics Stores (e.g. Best Buy)</label>
+					</div>
+
+					<div class="option">
+						<input id="whereToBuy3" type="checkbox" name="whereToBuySmartWatch" value="3" role="checkbox"/>
+						<label for="whereToBuy3">Hypermarket (e.g. Wal-Mart)</label>
+					</div>
+
+					<div class="option">
+						<input id="whereToBuy4" type="checkbox" name="whereToBuySmartWatch" value="4" role="checkbox"/>
+						<label for="whereToBuy4">Discount Store (e.g. Target)</label>
+					</div>
+
+					<div class="option">
+						<input id="whereToBuy5" type="checkbox" name="whereToBuySmartWatch" value="5" role="checkbox"/>
+						<label for="whereToBuy5">Department Store (e.g. Macy's)</label>
+					</div>
+
+					<div class="option">
+						<input id="whereToBuy6" type="checkbox" name="whereToBuySmartWatch" value="6" role="checkbox"/>
+						<label for="whereToBuy6">Toy Store (e.g. Toys "R" Us)</label>
+					</div>
+
+					<div class="option">
+						<input id="whereToBuy7" type="checkbox" name="whereToBuySmartWatch" value="7" role="checkbox"/>
+						<label for="whereToBuy7">Online Store of watch company</label>
+					</div>
+
+					<div class="option">
+						<input id="whereToBuy8" type="checkbox" name="whereToBuySmartWatch" value="8" role="checkbox"/>
+						<label for="whereToBuy8">Watch and Clock Ship</label>
+					</div>
+
+					<div class="option">
+						Other: <input type="text" name="whereToBuySmartWatchOther"/>
+					</div>
+				</div>
+			</div>
+
+			<div class="submitButton" to="eighthPath.html">Continue >></div>
+
+		</div>
+
+	</form>
+
+
+
+	<script type="text/javascript" src="../lib/jquery-1.11.2.min.js"></script>
+	<script type="application/javascript" src="http://l2.io/ip.js/?var=userip"></script>
+	<script type="text/javascript" src="../js/index.js"></script>
+</body>
+</html>
